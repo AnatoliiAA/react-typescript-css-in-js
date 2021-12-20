@@ -1,0 +1,20 @@
+{
+  "name": "css-in-js-and-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/AnatoliiAA/css-in-js-and-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/AnatoliiAA/css-in-js-and-typescript/issues"
+  },
+  "homepage": "https://gitlab.com/AnatoliiAA/css-in-js-and-typescript#readme"
+}
