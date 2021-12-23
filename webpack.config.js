@@ -1,42 +1,22 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.tsx",
   output: {
-    path: path.join(__dirname, "/public"),
+    path: path.join(__dirname, "/dist"),
     filename: "index_bundle.js",
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
-        ],
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
       },
     ],
   },
   resolve: {
-    extensions: ["", ".js", ".jsx"],
+    extensions: ["", ".js", ".ts", ".tsx"],
   },
   devServer: {
     static: {
@@ -46,8 +26,4 @@ module.exports = {
     compress: true,
     port: 3000,
   },
-  plugins: [
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
-    new MiniCssExtractPlugin(),
-  ],
 };
