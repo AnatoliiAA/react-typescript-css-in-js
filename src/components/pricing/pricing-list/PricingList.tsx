@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { Wrapper } from "./PricingList.css";
 import { PricingItem } from "../pricing-item/PricingItem";
+import usersData from "./data.json";
 
 const Title = styled.h1`
   text-align: center;
@@ -82,5 +83,11 @@ export const PricingList = (): JSX.Element => (
         )
       )}
     </PricingItems>
+    {usersData.users.map((user) => (
+      <>
+        <p>{user.name}</p>
+        <p>{user.age}</p>
+      </>
+    ))}
   </Wrapper>
 );
