@@ -1,15 +1,7 @@
 import styled from "@emotion/styled";
+import { Wrapper } from "./PricingList.css";
 import { PricingItem } from "../pricing-item/PricingItem";
 
-const Wrapper = styled.div`
-  box-sizing: border-box;
-  width: 1440px;
-  height: 900px;
-  margin: 20px auto 0 auto;
-  padding: 60px 0 0 0;
-  background-color: white;
-  border-radius: 20px;
-`;
 const Title = styled.h1`
   text-align: center;
   font-size: 48px;
