@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { PricingItems, SecondTitle, Title, Wrapper } from "./PricingList.css";
 import { PricingItem } from "../pricing-item/PricingItem";
 import pricingData from "./data.json";
