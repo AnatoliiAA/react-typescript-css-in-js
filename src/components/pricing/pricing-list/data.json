@@ -1,7 +1,41 @@
-{
-  "users": [
-    { "name": "Alex", "age": 4 },
-    { "name": "Denis", "age": 20 },
-    { "name": "Pavel", "age": 56 }
-  ]
-}
+[
+  {
+    "backgroundColor": "#6269f4",
+    "title": "Basic",
+    "price": "$29",
+    "text": "Perfect for developers who want extra modularity",
+    "features": [
+      "390+ Templates",
+      "600+ Icons",
+      "Build Tools",
+      "Free Updates",
+      "Source files"
+    ]
+  },
+  {
+    "backgroundColor": "#eb8700",
+    "title": "Professional",
+    "price": "$49",
+    "text": "Perfect for developers who want extra modularity 2",
+    "features": [
+      "390+ Templates",
+      "600+ Icons",
+      "Build Tools",
+      "Free Updates",
+      "Source files"
+    ]
+  },
+  {
+    "backgroundColor": "#74cf87",
+    "title": "Startup",
+    "price": "$99",
+    "text": "Perfect for developers who want extra modularity 3",
+    "features": [
+      "390+ Templates",
+      "600+ Icons",
+      "Build Tools",
+      "Free Updates",
+      "Source files"
+    ]
+  }
+]

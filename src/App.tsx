@@ -4,7 +4,7 @@ import { reset, global } from "./theme";
 
 export const App = (): JSX.Element => (
   <>
-    <Global styles={[reset, global]}></Global>
+    <Global styles={[global,reset]}></Global>
     <PricingList />
   </>
 );
