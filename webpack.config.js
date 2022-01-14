@@ -4,7 +4,7 @@ module.exports = {
   entry: "./src/index.tsx",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index_bundle.js",
+    filename: "bundle.js",
   },
   module: {
     rules: [
