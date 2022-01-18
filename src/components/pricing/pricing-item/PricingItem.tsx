@@ -11,7 +11,7 @@ import {
   Feature,
   FeatureIcon,
 } from "./PricingItem.css";
-import { PricingItemType } from "../../../types/types";
+import { PricingItemType } from "../../../types/common";
 
 export const PricingItem = ({
   backgroundColor,

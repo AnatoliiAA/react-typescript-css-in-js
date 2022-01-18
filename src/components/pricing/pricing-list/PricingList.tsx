@@ -1,7 +1,8 @@
 import { PricingItems, SecondTitle, Title, Wrapper } from "./PricingList.css";
 import { PricingItem } from "../pricing-item/PricingItem";
 import pricingData from "./data.json";
-import { PricingItemType } from "../../../types/types";
+import { PricingItemType } from "../../../types/common";
+
 
 export const PricingList = (): JSX.Element => (
   <Wrapper>

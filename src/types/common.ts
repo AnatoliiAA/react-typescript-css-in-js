@@ -5,9 +5,3 @@ export type PricingItemType = {
   text: string;
   features: Array<string>;
 };
-export type PricingItemHeaderProps = {
-  backgroundColor: string;
-}
-export type PricingItemFeatureProps = {
-  backgroundColor: string;
-}

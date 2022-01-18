@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
-import { PricingItemFeatureProps, PricingItemHeaderProps, PricingItemType } from "../../../types/types";
+import { PricingItemType } from "../../../types/common";
+
+type DefaultProps = Pick<PricingItemType, "backgroundColor">;
 
 export const Wrapper = styled.div`
   width: 30%;
   color: white;
 `;
-export const Header = styled.div<PricingItemHeaderProps>`
+export const Header = styled.div<DefaultProps>`
   width: 100%;
   height: 350px;
   margin: 0 0 35px 0;
@@ -38,7 +40,7 @@ export const Text = styled.p`
   letter-spacing: 1px;
   line-height: 24px;
 `;
-export const FeatureIcon = styled.span<PricingItemFeatureProps>`
+export const FeatureIcon = styled.span<DefaultProps>`
   display: inline-block;
   width: 16px;
   height: 16px;
